@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    <RelativeLayout
+        android:id="@+id/form"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".60" >
+        
+        <ListView
+        android:id="@+id/xchatlistView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"  
+    	android:paddingLeft="@dimen/activity_horizontal_margin"
+    	android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_alignParentTop="true"
+        android:transcriptMode="alwaysScroll" >
+    </ListView>
+    
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/form1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".07" 
+        android:background="#e5dddd" >
+        
+         <ImageView
+            android:id="@+id/additemimageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_action_new" />
+
+        <EditText
+            android:id="@+id/addchateditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/imageView2"
+            android:layout_toRightOf="@+id/additemimageView"
+            android:ems="10"
+            android:hint="Type to compose" >
+
+         <requestFocus />
+        </EditText>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/addchateditText"
+            android:src="@drawable/ic_action_send_now"
+            android:onClick="sendMessage" />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/form2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".33" 
+        android:background="#a5dddd" >
+
+        <ImageView
+            android:id="@+id/homeinstagramimageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/sam_calender" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView3"
+            android:layout_marginLeft="66dp"
+            android:layout_toRightOf="@+id/imageView3"
+            android:src="@drawable/sam_email" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/homeinstagramimageView"
+            android:layout_below="@+id/homeinstagramimageView"
+            android:layout_marginTop="26dp"
+            android:src="@drawable/sam_media" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView3"
+            android:layout_alignTop="@+id/imageView5"
+            android:src="@drawable/sam_chat" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView4"
+            android:layout_alignTop="@+id/imageView6"
+            android:src="@drawable/sam_share" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageView5"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/sam_notification" />
+        
+     </RelativeLayout>
+
+</LinearLayout>

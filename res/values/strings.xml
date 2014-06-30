@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Fuse</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_register_phone_number">Register Phone Number</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_verify_pin">VerifyPinActivity</string>
+    <string name="title_activity_update_profile">UpdateProfileActivity</string>
+    <string name="title_activity_my_main">MyMainActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_websearch">Web search</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+    <string name="title_activity_contact_details">ContactDetailsActivity</string>
+    <string name="title_activity_splash">Fuse</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <string name="title_activity_my_chat">MyChatActivity</string>
+    <string name="title_activity_select_contacts">SelectContactsActivity</string>
+    <string name="title_activity_sip_call">SipCallActivity</string>
+    <string name="title_activity_call">CallActivity</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    <string name="app_id">1397969127104365</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Home</item>
+        <item>Facebook</item>
+        <item>Twitter</item>
+        <item>LinkedIn</item>
+        <item>Instagram</item>
+        <item>Profile</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home_one</item>
+        <item>@drawable/facebook</item>
+        <item>@drawable/twitter</item>
+        <item>@drawable/linkedin</item>
+        <item>@drawable/instagram</item>
+        <item>@drawable/ic_action_person</item>
+    </array>
+
+    <string-array name="networks">
+        <item>Facebook</item>
+        <item>Twitter</item>
+        <item>LinkedIn</item>
+        <item>Google+</item>
+    </string-array>
+    <string-array name="network_icon">
+        <item>@drawable/facebook</item>
+        <item>@drawable/twitter</item>
+        <item>@drawable/linkedin</item>
+        <item>@drawable/ic_action_person</item>
+    </string-array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="title_activity_receiver_call">ReceiverCallActivity</string>
+    <string name="title_activity_tiny_sip_demo">TinySipDemoActivity</string>
+    <string name="SIPRegistrationError">Error while executing SIP registration</string>
+    <string name="SIPUnregistering">Unregistering SIP profile</string>
+    <string name="SIPRegistering">Registering SIP profile</string>
+    <string name="SIPCallConnected">SIP call connected to </string>
+    <string name="SIPReady">SIP profile registered successfully</string>
+    <string name="SIPInvite">Sending SIP Invite to </string>
+    <string name="STUNDiscovery">Starting STUN Discovery</string>
+    <string name="STUNNotSupported">NAT does not allow SIP connections</string>
+    <string name="title_activity_add_social_networks">AddSocialNetworksActivity</string>
+    <string name="title_activity_social_networks">SocialNetworksActivity</string>
+    <string name="title_activity_chat_list">ChatListActivity</string>
+    <string name="title_activity_invite_to_fuse">InviteToFuseActivity</string>
+    <string name="title_activity_facebook_friend_detail">FacebookFriendDetailActivity</string>
+    <string name="title_activity_share">ShareActivity</string>
+    <string name="title_activity_my_location">MyLocationActivity</string>
+    <string name="title_activity_location">LocationActivity</string>
+    <string name="title_activity_sms">SMSActivity</string>
+    <string name="title_activity_location_another">LocationAnotherActivity</string>
+    <string name="title_activity_not_member">NotMemberActivity</string>
+    <string name="title_activity_sip_chat">SipChatActivity</string>
+    
+    <string-array name="CountryCodes" >
+<item>93,AFGHANISTAN</item>
+<item>355,ALBANIA</item>
+<item>213,ALGERIA</item>
+<item>376,ANDORRA</item>
+<item>244,ANGOLA</item>
+<item>672,ANTARCTICA</item>
+<item>54,ARGENTINA</item>
+<item>374,ARMENIA</item>
+<item>297,ARUBA</item>
+<item>61,AUSTRALIA</item>
+<item>43,AUSTRIA</item>
+<item>994,AZERBAIJAN</item>
+<item>973,BAHRAIN</item>
+<item>880,BANGLADESH</item>
+<item>375,BELARUS</item>
+<item>32,BELGIUM</item>
+<item>501,BELIZE</item>
+<item>229,BENIN</item>
+<item>975,BHUTAN</item>
+<item>591,BOLIVIA</item>
+<item>387,BOSNIA AND HERZEGOWINA</item>
+<item>267,BOTSWANA</item>
+<item>55,BRAZIL</item>
+<item>673,BRUNEI DARUSSALAM</item>
+<item>359,BULGARIA</item>
+<item>226,BURKINA FASO</item>
+<item>95,MM</item>
+<item>257,BURUNDI</item>
+<item>855,CAMBODIA</item>
+<item>237,CAMEROON</item>
+<item>1,CANADA</item>
+<item>238,CAPE VERDE</item>
+<item>236,CENTRAL AFRICAN REPUBLIC</item>
+<item>235,CHAD</item>
+<item>56,CHILE</item>
+<item>86,CHINA</item>
+<item>61,CHRISTMAS ISLAND</item>
+<item>61,COCOS (KEELING) ISLANDS</item>
+<item>57,COLOMBIA</item>
+<item>269,COMOROS</item>
+<item>242,CONGO</item>
+<item>243,CONGO, THE DRC</item>
+<item>682,COOK ISLANDS</item>
+<item>506,COSTA RICA</item>
+<item>385,CROATIA</item>
+<item>53,CUBA</item>
+<item>357,CYPRUS</item>
+<item>420,CZECH REPUBLIC</item>
+<item>45,DENMARK</item>
+<item>253,DJIBOUTI</item>
+<item>593,ECUADOR</item>
+<item>20,EGYPT</item>
+<item>503,EL SALVADOR</item>
+<item>240,EQUATORIAL GUINEA</item>
+<item>291,ERITREA</item>
+<item>372,ESTONIA</item>
+<item>251,ETHIOPIA</item>
+<item>500,FALKLAND ISLANDS</item>
+<item>298,FAROE ISLANDS</item>
+<item>679,FIJI</item>
+<item>358,FINLAND</item>
+<item>33,FRANCE</item>
+<item>689,FRENCH POLYNESIA</item>
+<item>241,GABON</item>
+<item>220,GAMBIA</item>
+<item>995,GEORGIA</item>
+<item>49,GERMANY</item>
+<item>233,GHANA</item>
+<item>350,GIBRALTARl</item>
+<item>30,GREECE</item>
+<item>299,GREENLAND</item>
+<item>502,GUATEMALA</item>
+<item>224,GUINEA</item>
+<item>245,GUINEA-BISSAU</item>
+<item>592,GUYANA</item>
+<item>509,HAITI</item>
+<item>504,HONDURAS</item>
+<item>852,HONG KONG</item>
+<item>36,HUNGARY</item>
+<item>91,INDIA</item>
+<item>62,INDONESIA</item>
+<item>98,IRAN</item>
+<item>964,IRAQ</item>
+<item>353,IRELAND</item>
+<item>972,ISRAEL</item>
+<item>39,ITALY</item>
+<item>81,JAPAN</item>
+<item>962,JORDAN</item>
+<item>7,KAZAKHSTAN</item>
+<item>254,KENYA</item>
+<item>686,KIRIBATI</item>
+<item>965,KUWAIT</item>
+<item>996,KYRGYZSTAN</item>
+<item>856,LAOS</item>
+<item>371,LATVIA</item>
+<item>961,LEBANON</item>
+<item>266,LESOTHO</item>
+<item>231,LIBERIA</item>
+<item>218,LIBYAN ARAB JAMAHIRIYA</item>
+<item>423,LIECHTENSTEIN</item>
+<item>370,LITHUANIA</item>
+<item>352,LUXEMBOURG</item>
+<item>853,MACAU</item>
+<item>389,MACEDONIA</item>
+<item>261,MADAGASCAR</item>
+<item>265,MALAWI</item>
+<item>60,MALAYSIA</item>
+<item>960,MALDIVES</item>
+<item>223,MALI</item>
+<item>356,MALTA</item>
+<item>692,MARSHALL ISLANDS</item>
+<item>222,MAURITANIA</item>
+<item>230,MAURITIUS</item>
+<item>262,MAYOTTE</item>
+<item>52,MEXICO</item>
+<item>691,MICRONESIA</item>
+<item>373,MOLDOVA</item>
+<item>377,MONACO</item>
+<item>976,MONGOLIA</item>
+<item>382,MONTENEGRO</item>
+<item>212,MOROCCO</item>
+<item>258,MOZAMBIQUE</item>
+<item>264,NAMIBIA</item>
+<item>674,NAURU</item>
+<item>977,NEPAL</item>
+<item>31,NETHERLANDS</item>
+<item>599,NETHERLANDS ANTILLES</item>
+<item>687,NEW CALEDONIA</item>
+<item>64,NEW ZEALAND</item>
+<item>505,NICARAGUA</item>
+<item>227,NIGER</item>
+<item>234,NIGERIA</item>
+<item>683,NIUE</item>
+<item>47,NORWAY</item>
+<item>968,OMAN</item>
+<item>92,PAKISTAN</item>
+<item>680,PALAU</item>
+<item>507,PANAMA</item>
+<item>675,PAPUA NEW GUINEA</item>
+<item>595,PARAGUAY</item>
+<item>51,PERU</item>
+<item>63,PHILIPPINES</item>
+<item>870,PITCAIRN</item>
+<item>48,POLAND</item>
+<item>351,PORTUGAL</item>
+<item>1,PUERTO RICO</item>
+<item>974,QATAR</item>
+<item>40,ROMANIA</item>
+<item>7,RUSSIAN FEDERATION</item>
+<item>250,RWANDA</item>
+<item>685,SAMOA</item>
+<item>378,SAN MARINO</item>
+<item>239,SAO TOME AND PRINCIPE</item>
+<item>966,SAUDI ARABIA</item>
+<item>221,SENEGAL</item>
+<item>381,SERBIA</item>
+<item>248,SEYCHELLES</item>
+<item>232,SIERRA LEONE</item>
+<item>65,SINGAPORE</item>
+<item>421,SLOVAKIA</item>
+<item>386,SLOVENIA</item>
+<item>677,SOLOMON ISLANDS</item>
+<item>252,SOMALIA</item>
+<item>27,SOUTH AFRICA</item>
+<item>34,SPAIN</item>
+<item>94,SRI LANKA</item>
+<item>290,ST. HELENA</item>
+<item>508,ST. PIERRE AND MIQUELON</item>
+<item>249,SUDAN</item>
+<item>597,SURINAME</item>
+<item>268,SWAZILAND</item>
+<item>46,SWEDEN</item>
+<item>41,SWITZERLAND</item>
+<item>963,SYRIAN ARAB REPUBLIC</item>
+<item>886,TAIWAN</item>
+<item>992,TAJIKISTAN</item>
+<item>255,TANZANIA</item>
+<item>66,THAILAND</item>
+<item>228,TOGO</item>
+<item>690,TOKELAU</item>
+<item>676,TONGA</item>
+<item>216,TUNISIA</item>
+<item>90,TURKEY</item>
+<item>993,TURKMENISTAN</item>
+<item>688,TUVALU</item>
+<item>971,UNITED ARAB EMIRATES</item>
+<item>256,UGANDA</item>
+<item>44,UNITED KINGDOM</item>
+<item>380,UKRAINE</item>
+<item>598,URUGUAY</item>
+<item>1,UNITED STATES</item>
+<item>998,UZBEKISTAN</item>
+<item>678,VANUATU</item>
+<item>58,VENEZUELA</item>
+<item>84,VIET NAM</item>
+<item>681,WF</item>
+<item>967,YEMEN</item>
+<item>260,ZAMBIA</item>
+<item>263,ZIMBABWE</item>
+</string-array>
+
+</resources>

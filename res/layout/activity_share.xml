@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShareActivity" >
+
+    <ImageView
+        android:id="@+id/personimageView1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/noface" />
+
+    <EditText
+        android:id="@+id/personeditText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/personimageView1"
+        android:layout_alignParentRight="true"
+        android:ems="10" />
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/personimageView1"
+        android:layout_marginTop="78dp"
+        android:background="#e5dddd" >
+        
+        <TextView
+                 android:id="@+id/swordcounter"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:padding="5dp"
+                 android:text="140" />
+        
+        <ImageView
+             android:id="@+id/shareallimageView"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_alignParentTop="true"
+             android:layout_marginRight="14dp"
+             android:src="@drawable/ic_action_send_now"
+             android:clickable="true"
+              />
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/footer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/footer" >
+
+        <ListView
+            android:id="@+id/allnetworkslistView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+        </ListView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

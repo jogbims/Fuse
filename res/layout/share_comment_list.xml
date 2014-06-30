@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/snetworktextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/snametextView"
+        android:layout_below="@+id/snametextView"
+        android:layout_marginTop="16dp"
+        android:text="TextView" />
+
+    <CheckBox
+        android:id="@+id/scheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/snametextView"
+        android:layout_marginRight="15dp" />
+
+    <ImageView
+        android:id="@+id/simageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/noface" />
+
+    <TextView
+        android:id="@+id/snametextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/simageView"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/simageView"
+        android:text="TextView"
+        android:textSize="20dp" />
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyChatActivity" >
+
+     <ListView
+        android:id="@+id/chatlistView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"  
+    	android:paddingLeft="@dimen/activity_horizontal_margin"
+    	android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_above="@+id/form"
+        android:layout_alignParentTop="true"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/form"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#e5dddd"
+        android:layout_height="40sp" >
+
+        <ImageView
+            android:id="@+id/additemimageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_action_new" />
+
+        <EditText
+            android:id="@+id/addchateditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/imageView2"
+            android:layout_toRightOf="@+id/additemimageView"
+            android:ems="10"
+            android:hint="Type to compose" >
+
+         <requestFocus />
+        </EditText>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/addchateditText"
+            android:src="@drawable/ic_action_send_now"
+            android:onClick="sendMessage" />
+
+    </RelativeLayout>
+    
+
+
+</RelativeLayout>

@@ -1,0 +1,230 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SipChatActivity" >
+
+     <RelativeLayout
+        android:id="@+id/listform"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/bgg"
+        android:layout_weight=".60" >
+        
+        <ListView
+        android:id="@+id/chatlistView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"  
+    	android:paddingLeft="@dimen/activity_horizontal_margin"
+    	android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_above="@+id/form"
+        android:layout_alignParentTop="true"
+        android:stackFromBottom="true"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:transcriptMode="alwaysScroll" >
+    </ListView>
+        
+        
+   </RelativeLayout>
+
+    
+    <RelativeLayout
+        android:id="@+id/footerform"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".07" 
+        android:background="#e5e7e7" >
+
+        <EditText
+            android:id="@+id/addchateditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/imageView2"
+            android:layout_toRightOf="@+id/additemimageView"
+            android:ems="10"
+            android:hint="Type to compose" >
+
+         <requestFocus />
+        </EditText>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/addchateditText"
+            android:src="@drawable/ic_action_send_now"
+            android:onClick="sendMessage" />
+
+        <ImageView
+            android:id="@+id/additemimageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:onClick="showShare"
+            android:src="@drawable/ic_action_new" />
+
+    </RelativeLayout>
+    
+	<RelativeLayout
+        android:id="@+id/form2"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".33" 
+        android:background="#e5e7e7" >
+
+        <ImageView
+            android:id="@+id/homeinstagramimageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/tcp"
+            android:onClick="startCamera" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView4"
+            android:layout_alignTop="@+id/imageView6"
+            android:src="@drawable/sc"
+            android:onClick="startContactPicker" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/imageView3"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ei"
+            android:onClick="addSmiley" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView3"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/sl"
+            android:onClick="shareLocation" />
+
+        <ImageView
+            android:id="@+id/voicenoteimageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/homeinstagramimageView"
+            android:layout_alignTop="@+id/imageView6"
+            android:src="@drawable/am"
+            android:onClick="startVoiceNote" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/homeinstagramimageView"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/tcv"
+            android:onClick="startVideoPicker" />
+        
+     </RelativeLayout>
+     
+	<RelativeLayout
+        android:id="@+id/form3"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".33" 
+        android:background="#e5e7e7"
+        android:visibility="gone">"
+        
+         <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/homeinstagramimageView"
+        android:layout_marginLeft="44dp"
+        android:layout_toRightOf="@+id/homeinstagramimageView"
+        android:src="@drawable/emo_im_sad"
+        android:onClick="addSad" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/imageView2"
+        android:src="@drawable/emo_im_cool" 
+        android:onClick="addCool"/>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_marginRight="18dp"
+        android:src="@drawable/emo_im_embarrassed"
+        android:onClick="addEmbarrassed" />
+
+    <ImageView
+        android:id="@+id/homeinstagramimageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="34dp"
+        android:src="@drawable/emo_im_happy"
+        android:onClick="addHappy" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/homeinstagramimageView"
+        android:layout_below="@+id/homeinstagramimageView"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/emo_im_surprised"
+        android:onClick="addSurprised" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignTop="@+id/imageView5"
+        android:src="@drawable/emo_im_tongue_sticking_out"
+        android:onClick="addTongueStickingOut" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView3"
+        android:layout_alignTop="@+id/imageView6"
+        android:src="@drawable/emo_im_winking"
+        android:onClick="addWinking" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView4"
+        android:layout_alignTop="@+id/imageView7"
+        android:src="@drawable/emo_im_yelling"
+        android:onClick="addYelling" />
+	    
+    </RelativeLayout>
+
+
+</LinearLayout>

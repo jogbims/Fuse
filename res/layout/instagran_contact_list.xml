@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView
+		android:id="@+id/instagramcName"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:padding="5dp"
+		android:layout_marginLeft="75dp"
+		android:layout_centerVertical="true"
+    	android:textColor="#000000"
+    	android:textSize="12sp" 
+		>
+	</TextView>
+	<ImageView
+		android:id="@+id/instagramcImage"
+		android:layout_width="80dp"
+		android:layout_height="80dp"
+		android:padding="5dp"
+		android:src="@drawable/noface"
+		android:layout_alignParentLeft="true"
+		/>
+	<TextView
+		android:id="@+id/instagramcEmail"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="75dp"
+		android:layout_below="@+id/cName"
+    	android:textColor="#333333"
+    	android:textSize="12sp" 
+    	android:visibility="gone"
+		>
+	</TextView>
+    
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentTwitterShare" >
+
+     <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/activity_horizontal_margin" >
+
+        <ImageView
+            android:id="@+id/twitteruserimageView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/noface" />
+
+        <EditText
+            android:id="@+id/twittercommenteditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/chatlistimageView"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="18dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:hint="Compose new Tweet..." />
+        
+        
+         <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#e5dddd" >
+        
+
+             <TextView
+                 android:id="@+id/twitterwordcounter"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:padding="5dp"
+                 android:text="140" />
+             
+   
+
+         <ImageView
+             android:id="@+id/twittershareimageView"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_alignParentTop="true"
+             android:layout_marginRight="14dp"
+             android:src="@drawable/ic_action_send_now"
+             android:clickable="true"
+              />
+
+    </RelativeLayout>
+        
+    </RelativeLayout>
+    
+
+</FrameLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp" >
+
+    <TextView
+        android:id="@+id/startptextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="22dp"
+        android:text="0:00" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/startptextView"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/startptextView"
+        android:indeterminate="false"
+        android:maxHeight="10dip"
+        android:minHeight="10dip"
+        android:progress="0"
+        android:progressDrawable="@drawable/greenprogress" />
+
+    <Button
+        android:id="@+id/recordpbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/startptextView"
+        android:layout_below="@+id/startptextView"
+        android:layout_marginTop="27dp"
+        android:background="#33b5e5"
+        android:width="90dp"
+        android:text="Record" />
+
+    <Button
+        android:id="@+id/cancelpbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/recordpbutton"
+        android:layout_alignRight="@+id/endptextView"
+        android:background="#33b5e5"
+        android:width="90dp"
+        android:text="Cancel" />
+
+    <TextView
+        android:id="@+id/endptextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/recordpbutton"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/progressBar"
+        android:text="00:30" />
+
+</RelativeLayout>

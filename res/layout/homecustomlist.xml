@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/facebookform"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+			   <ImageView
+			             android:id="@+id/homefacebookprovidertextView"
+			             android:layout_width="wrap_content"
+			             android:layout_height="wrap_content"
+			             android:layout_alignParentLeft="true"
+			             android:layout_alignParentTop="true"
+			             android:layout_marginTop="22dp"
+			             android:src="@drawable/facebook"
+			             android:text="Provider" />
+
+			    <TextView
+			        android:id="@+id/homefacebookmessagetextView"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignTop="@+id/homefacebookprovidertextView"
+			        android:layout_marginLeft="24dp"
+			        android:layout_toRightOf="@+id/homefacebookprovidertextView"
+			        android:text="Message" />
+
+			    <TextView
+			        android:id="@+id/homefacebooktimetextView"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignLeft="@+id/homefacebookmessagetextView"
+			        android:layout_below="@+id/homefacebookprovidertextView"
+			        android:layout_marginTop="28dp"
+			        android:text="Time" />
+        
+   </RelativeLayout>
+   
+    
+     <RelativeLayout
+        android:id="@+id/instagramform"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+			    
+         
+         <TextView
+			        android:id="@+id/homeinstagramprovidertextView"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentLeft="true"
+			        android:layout_alignParentTop="true"
+			        android:layout_marginTop="22dp"
+			        android:text="Provider" />
+
+         <ImageView
+             android:id="@+id/homeinstagramimageView"
+             android:layout_width="150dp"
+        	 android:layout_height="150dp"
+        	 android:padding="5dp"
+             android:layout_alignTop="@+id/homeinstagramprovidertextView"
+             android:layout_marginLeft="34dp"
+             android:layout_toRightOf="@+id/homeinstagramprovidertextView" />
+
+         <TextView
+             android:id="@+id/homeinstagramtimetextView"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/homeinstagramimageView"
+             android:layout_below="@+id/homeinstagramimageView"
+             android:layout_marginTop="18dp"
+             android:text="TextView" />
+         
+     </RelativeLayout>
+    
+    
+    
+    
+
+   
+</LinearLayout>

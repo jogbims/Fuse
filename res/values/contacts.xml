@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="contacts">
+        <item name="samson">Samson</item>
+          <item name="jonathan">Jonathan</item>
+            <item name="emmanuel">Emmanuel</item>
+              <item name="gbolaga">Gbolaga</item>
+                <item name="busayo">Busayo</item>
+    </string-array>
+    
+</resources>

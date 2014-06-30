@@ -1,0 +1,46 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentProfile" >
+
+    <!-- TODO: Update blank fragment layout -->
+
+   
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/chatlistimageView"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/profilebg"
+             />
+
+        <com.vas2nets.fuse.image.CircularImageView
+            android:id="@+id/profilepiximageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignBottom="@+id/chatlistimageView"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"           
+            android:src="@drawable/noface"/>
+
+        <TextView
+            android:id="@+id/nametextView"
+            style="@style/button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/profilepiximageView"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="24dp"
+            android:text="Name" />
+        
+    </RelativeLayout>
+
+</FrameLayout>

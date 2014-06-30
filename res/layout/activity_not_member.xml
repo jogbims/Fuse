@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NotMemberActivity" >
+    
+    <RelativeLayout
+        android:id="@+id/contactinfo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#e5e7e7" 
+        android:layout_weight=".10" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:padding="10dp"
+            android:text="Contact Info:" />
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/listform"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".20"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/phoneNumbertextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Mobile" />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/listform2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".70"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/red_button"
+         	style="@style/button_text"
+            android:text="Invite to Fuse" 
+            android:gravity="center"
+            android:onClick="sendInvite"/>    
+    </RelativeLayout>
+    
+
+</LinearLayout>

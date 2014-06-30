@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SMSActivity" >
+    
+    
+     <RelativeLayout
+        android:id="@+id/smsform"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/bgg"
+        android:layout_weight=".80" >
+        
+        <ListView
+	        android:id="@+id/smslistView"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"  
+	    	android:paddingLeft="@dimen/activity_horizontal_margin"
+	    	android:paddingRight="@dimen/activity_horizontal_margin"
+	        android:layout_above="@+id/form"
+	        android:layout_alignParentTop="true"
+	        android:stackFromBottom="true"
+	        android:paddingBottom="5dp"
+	        android:paddingTop="5dp"
+	        android:transcriptMode="alwaysScroll" >
+    	</ListView>
+    
+     </RelativeLayout>
+     
+     
+      <RelativeLayout
+        android:id="@+id/smsform"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".20" 
+        android:background="#e5e7e7"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/addchateditText"
+            android:src="@drawable/ic_action_send_now"
+            android:onClick="sendMessage" />
+
+        <TextView
+            android:id="@+id/wordcounttextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/smseditText"
+            android:text="140" />
+
+        <EditText
+            android:id="@+id/smseditText"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_alignTop="@+id/imageView2"
+            android:layout_toLeftOf="@+id/imageView2"
+            android:background="@drawable/rect_edit_text"
+            android:padding="3dp"
+            android:ems="10"
+            android:hint="Type to compose" />
+
+    </RelativeLayout>
+     
+     
+
+</LinearLayout>

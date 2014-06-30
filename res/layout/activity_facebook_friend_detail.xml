@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FacebookFriendDetailActivity" >
+
+    <ImageView
+        android:id="@+id/bgImageView"
+       android:layout_width="wrap_content"
+        android:layout_height="180dp"
+         android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/bgtwo" />
+
+    <com.vas2nets.fuse.image.CircularImageView
+        android:id="@+id/fcontactImageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignBottom="@+id/bgImageView"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18dp"
+        android:padding="5dp"
+        android:src="@drawable/noface" />
+
+    <TextView
+        android:id="@+id/fNametextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="18dp"
+        android:text="TextView" />
+
+</RelativeLayout>

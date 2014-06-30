@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CallActivity" >
+
+    <ImageView
+        android:id="@+id/chatlistimageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:src="@drawable/callbg1" />
+
+    <TextView
+        android:id="@+id/output1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="107dp"
+        android:text="Dialling..." />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/output1"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="29dp"
+        android:src="@drawable/dialpad" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/imageView3"
+        android:src="@drawable/microphoneone" />
+
+    <TextView
+        android:id="@+id/me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="18dp"
+        android:text="Dial Pad" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/microphone" />
+
+    <TextView
+        android:id="@+id/chatlistmessagetextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/me"
+        android:layout_alignBottom="@+id/me"
+        android:layout_alignLeft="@+id/imageView3"
+        android:text="Speaker" />
+
+    <TextView
+        android:id="@+id/chatlisttimetextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/chatlistmessagetextView"
+        android:layout_alignLeft="@+id/imageView4"
+        android:text="Mute" />
+
+    <com.vas2nets.fuse.image.CircularImageView
+        android:id="@+id/imageView5"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_above="@+id/output1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="26dp"
+        android:src="@drawable/noface" />
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/button_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="TextView" />
+
+</RelativeLayout>

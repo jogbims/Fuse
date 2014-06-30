@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <TextView
+        android:id="@+id/endplaytextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/playprogressBar"
+        android:layout_marginRight="16dp"
+        android:text="00:00" />
+
+    <Button
+        android:id="@+id/playnotebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/playstarttimetextView"
+        android:layout_below="@+id/playstarttimetextView"
+        android:layout_marginTop="16dp"
+        android:background="#33b5e5"
+        android:width="90dp"
+        android:text="Play" />
+
+    <Button
+        android:id="@+id/cancelplaybutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/playnotebutton"
+        android:layout_alignBottom="@+id/playnotebutton"
+        android:layout_alignRight="@+id/endplaytextView"
+        android:background="#33b5e5"
+        android:width="90dp"
+        android:text="Cancel" />
+
+    <ProgressBar
+        android:id="@+id/playprogressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/playstarttimetextView"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="false"
+        android:maxHeight="10dip"
+        android:minHeight="10dip"
+        android:progress="0"
+        android:progressDrawable="@drawable/greenprogress" />
+
+    <TextView
+        android:id="@+id/playstarttimetextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="23dp"
+        android:layout_toLeftOf="@+id/playprogressBar"
+        android:text="00:00" />
+
+    <Button
+        android:id="@+id/usevoicenotebutton"
+        style="@style/button_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/playnotebutton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="Use" />
+
+</RelativeLayout>
